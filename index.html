@@ -1,0 +1,2521 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Curso de Lungojs</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="cleartype" content="on">
+
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+
+
+  <!-- iPhone -->
+  <link href="http://lungo.tapquo.com/resources/icon-57.png" sizes="57x57" rel="apple-touch-icon">
+  <link href="http://lungo.tapquo.com/resources/startup-image-320x460.png" media="(device-width: 320px) and (device-height: 480px)
+             and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+
+  <!-- iPhone (Retina) -->
+  <link href="http://lungo.tapquo.com/resources/icon-114.png" sizes="114x114" rel="apple-touch-icon">
+  <link href="http://lungo.tapquo.com/resources/startup-image-640x920.png" media="(device-width: 320px) and (device-height: 480px)
+             and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+  <!-- iPhone 5 -->
+  <link href="http://lungo.tapquo.com/resources/startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px)
+             and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+  <!-- iPad -->
+  <link href="http://lungo.tapquo.com/resources/icon-72.png" sizes="72x72" rel="apple-touch-icon">
+  <link href="http://lungo.tapquo.com/resources/startup-image-768x1004.png" media="(device-width: 768px) and (device-height: 1024px)
+             and (orientation: portrait)
+             and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+  <link href="http://lungo.tapquo.com/resources/startup-image-748x1024.png" media="(device-width: 768px) and (device-height: 1024px)
+             and (orientation: landscape)
+             and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+
+  <!-- iPad (Retina) -->
+  <link href="http://lungo.tapquo.com/resources/icon-144.png" sizes="144x144" rel="apple-touch-icon">
+  <link href="http://lungo.tapquo.com/resources/startup-image-1536x2008.png" media="(device-width: 768px) and (device-height: 1024px)
+             and (orientation: portrait)
+             and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+  <link href="http://lungo.tapquo.com/resources/startup-image-1496x2048.png" media="(device-width: 768px) and (device-height: 1024px)
+             and (orientation: landscape)
+             and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+  <!-- Lungo - Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="components/lungo/lungo.css">
+  <link rel="stylesheet" href="components/lungo/lungo.icon.brand.css">
+  <link rel="stylesheet" href="components/lungo/lungo.icon.css">
+  <link rel="stylesheet" href="components/lungo/theme.lungo.css">
+</head>
+
+<body class="app">
+
+  <section>
+    <header>
+      <nav>
+        <a href="#menu-aside" data-router="aside" data-icon="menu"></a>
+      </nav>
+      <div class="title centered">UPOLI 2020</div>
+    </header>
+
+    <nav class="groupbar">
+      <a href="#home" data-router="article" class="active">Home</a>
+    </nav>
+
+    <footer>
+      <nav>
+        <a href="#home" data-router="article" class="active" data-icon="home"></a>
+      </nav>
+    </footer>
+
+
+
+    <article id="home" class="list scroll indented active">
+      <ul>
+        <li class="px-0">
+
+          <div class="container p-0 my-5">
+            <div class="p-md-3 mx-md-5 text-center text-lg-left">
+              <h6 class="section-title h1 text-dark text-center mt-3">La ruta del Café</h6>
+
+              <div class="row  justify-content-center">
+                <div class="col-lg-3 col-md-6 mb-4 d-flex align-items-stretch">
+                  <div class="card">
+                    <div class="avatar white d-flex justify-content-center align-items-center">
+                      <a href="#matagalpa" data-router="article"><img
+                          src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Policestation.jpg"
+                          class="img-fluid" /></a>
+                    </div>
+                    <div class="card-body">
+                      <p class="font-weight-bold my-2">Matagalpa</p>
+                      <p class="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non numquam
+                        quaerat earum veniam officia, nostrum vel corporis illum quasi magnam dolor excepturi aliquid
+                        vero totam blanditiis. Voluptatibus maxime similique aut!</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 d-flex align-items-stretch">
+                  <div class="card">
+                    <div class="avatar white d-flex justify-content-center align-items-center">
+                      <a href="#esteli" data-router="article"><img
+                        src="https://assets.cdnelnuevodiario.com/cache/66/2e/662ee316dab12a7d4495b147b57c8116.jpg"
+                        class="img-fluid" /></a>
+                    </div>
+                    <div class="card-body">
+                      <p class="font-weight-bold my-2">Estelí</p>
+                      <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur nihil qui
+                        facere et velit, unde temporibus placeat hic neque porro ex natus nisi tempore dolores
+                        doloremque a minus? Saepe, molestiae?</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 d-flex align-items-stretch">
+                  <div class="card">
+                    <div class="avatar white d-flex justify-content-center align-items-center">
+                      <a href="#jinotega" data-router="article"><img
+                        src="https://media-cdn.tripadvisor.com/media/photo-s/06/ac/2f/04/jinotega-nicaragua-latin.jpg"
+                        class="img-fluid" /></a>
+                    </div>
+                    <div class="card-body">
+                      <p class="font-weight-bold my-2">Jinotega</p>
+                      <p class="text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus earum
+                        illo quisquam deleniti minus eligendi natus eos harum aliquid sapiente! Maiores dolorem quam
+                        placeat in repellendus! Nisi vel atque repellat!</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 d-flex align-items-stretch">
+                  <div class="card">
+                    <div class="avatar white d-flex justify-content-center align-items-center">
+                      <a href="#madriz" data-router="article"><img
+                        src="https://rceni.com/wp-content/uploads/2017/07/1365978660_150413canonde-somoto-1024x660.jpg"
+                        class="img-fluid" /></a>
+                    </div>
+                    <div class="card-body">
+                      <p class="font-weight-bold my-2">Madriz</p>
+                      <p class="text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio reiciendis
+                        excepturi mollitia cupiditate! Ipsam magni veniam iure nobis architecto, id deserunt, mollitia
+                        voluptatibus eaque officiis placeat ut obcaecati molestias molestiae!</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4 d-flex align-items-stretch">
+                  <div class="card">
+                    <div class="avatar white d-flex justify-content-center align-items-center">
+                      <a href="#nuevaS" data-router="article"><img
+                        src="https://somoscentroamerica.com/m/photos/get_image/file/5e5a11ae6a3129f85594da4c7ea2a545.jpg"
+                        class="img-fluid" /></a>
+                    </div>
+                    <div class="card-body">
+                      <p class="font-weight-bold my-2">Nueva Segovia</p>
+                      <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ex, expedita
+                        quo aut quibusdam ipsa at, error soluta numquam quasi aliquam debitis dolorum corporis
+                        recusandae a minima consequuntur, voluptate incidunt.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </li>
+
+        <li class="p-0">
+          <div class="container p-0 my-5">
+            <div class="p-md-3 mx-md-5">
+              <div class="row mb-5 d-flex align-items-center">
+                <div class="col-lg-6 col-md-6">
+                  <div class="card">
+                    <div class="card-header white">
+                      <h4 class="font-weight-bold mb-0">Conoce</h4>
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                        do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit
+                        esse cillum dolore eu fugiat.
+                      </p>
+                      <small class="blue-text font-weight-bold"></small>
+                      <a href="#esteli" data-router="article">
+                        <br>
+                        <h2 class="font-weight-bold" id="esteli">Learn more</h2>
+                       </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="view overlay rounded z-depth-1">
+                    <img src="https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="img-fluid"
+                      alt="Sample project image" />
+                    <a href="#">
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-5 d-flex align-items-center justify-content-end">
+                <div class="col-md-6 col-lg-4">
+                  <div class="view overlay rounded z-depth-1">
+                    <img src="https://images.pexels.com/photos/2174656/pexels-photo-2174656.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="img-fluid"
+                      alt="Sample project image" />
+                    <a href="#">
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                  <div class="card">
+                    <div class="card-header white">
+                      <h4 class="font-weight-bold mb-0">Disfruta</h4>
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                        do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit
+                        esse cillum dolore eu fugiat.
+                      </p>
+                      <small class="blue-text font-weight-bold"></small>
+                      <a href="#matagalpa" data-router="article">
+                        <br>
+                        <h2 class="font-weight-bold" id="matagalpa">Learn more</h2>
+                       </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row d-flex align-items-center">
+                <div class="col-lg-6 col-md-6">
+                  <div class="card">
+                    <div class="card-header white">
+                      <h4 class="font-weight-bold mb-0">Aprende de la cultura</h4>
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                        do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit
+                        esse cillum dolore eu fugiat.
+                      </p>
+                      <small class="blue-text font-weight-bold"></small>
+                      <a href="#madriz" data-router="article">
+                        <br>
+                        <h2 class="font-weight-bold" id="madriz">Learn more</h2>
+                       </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="view overlay rounded z-depth-1">
+                    <img src="https://images.pexels.com/photos/2218344/pexels-photo-2218344.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="img-fluid"
+                      alt="Sample project image" />
+                    <a href="#">
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        
+     
+        
+    
+
+        <li class="p-0 container content-carrusel">
+
+          <h6 class="section-title h1 text-dark text-center mt-5">CONOCE EL PROCESO DE PRODUCCIÓN Y CONSUMO DEL CAFÉ</h6>
+          <p class="text-dark mb-5 text-justify">La Ruta del Café tiene como eje temático principal el “café”, siendo característica su producción y consumo en la región norte-centro del país. Comprende el despliegue de atractivos y recursos turísticos a lo largo de cinco departamentos: Jinotega, Matagalpa, Estelí, Nueva Segovia y Madriz, los cuales comprenden a su vez 48 municipios con una extensión territorial de 23,455.46 kms2, equivalente al 19.49% del territorio nacional.</p>
+
+
+          <!--Carousel Wrapper-->
+<div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+
+  <!--/.Indicators-->
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <div class="view">
+        <img class="d-block w-100" src="https://www.visitcentroamerica.com/wp-content/uploads/2017/11/ver-centroamerica-nicaragua-ruta-cafe-03.jpg"
+          alt="First slide">
+        <div class="mask rgba-black-light"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive">Light mask</h3>
+        <p>First text</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <!--Mask color-->
+      <div class="view">
+        <img class="d-block w-100" src="https://www.visitcentroamerica.com/wp-content/uploads/2017/11/ver-centroamerica-nicaragua-ruta-cafe-01.jpg"
+          alt="Second slide">
+        <div class="mask rgba-black-strong"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive">Strong mask</h3>
+        <p>Secondary text</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <!--Mask color-->
+      <div class="view">
+        <img class="d-block w-100" src="https://www.visitcentroamerica.com/wp-content/uploads/2017/11/ver-centroamerica-nicaragua-ruta-cafe-02.jpg"
+          alt="Third slide">
+        <div class="mask rgba-black-slight"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive">Slight mask</h3>
+        <p>Third text</p>
+      </div>
+    </div>
+  </div>
+  <!--/.Slides-->
+  <!--Controls-->
+  <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  <!--/.Controls-->
+</div>
+<!--/.Carousel Wrapper-->
+        </li>
+      </ul>
+
+    </article>
+
+
+
+
+
+
+    <article id="matagalpa" class="list scroll indented container-fluid p-0">
+
+      <h6 class="section-title h1 text-dark text-center mt-5">MATAGALPA</h6>
+
+      <!-- Tabs -->
+      <div id="tabs" class="mt-5 text-dark">
+        <div class="container px-0">
+          <div class="row">
+            <div class="col-xs-12 ">
+              <nav>
+                <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                  <a class="nav-item nav-link active text-dark" id="nav-home-tab" data-toggle="tab" href="#nav-home"
+                    role="tab" aria-controls="nav-home" aria-selected="true">Donde A</a>
+                  <a class="nav-item nav-link text-dark" id="nav-profile-tab" data-toggle="tab" href="#nav-profile"
+                    role="tab" aria-controls="nav-profile" aria-selected="false">Donde C</a>
+                  <a class="nav-item nav-link text-dark" id="nav-contact-tab" data-toggle="tab" href="#nav-contact"
+                    role="tab" aria-controls="nav-contact" aria-selected="false">Donde P</a>
+                </div>
+              </nav>
+              <div class="tab-content py-3 p-0 px-sm-0" id="nav-tabContent">
+                <div class="tab-pane fade show active p-0" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                  <div class="container my-5 p-0 ">
+
+
+                    <!--Section: Content-->
+                    <div class="dark-grey-text">
+
+                      <!-- Section heading -->
+                      <h2 class="text-center font-weight-bold mb-4 pb-2">Donde puedo quedarme?</h2>
+                      <!-- Section description -->
+                      <p class="text-center lead grey-text mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+                      <!-- Grid row -->
+                      <div class="row ">
+
+                        <!-- Grid column -->
+                        <div class="col-lg-5 p-0 text-center text-lg-left mb-4">
+                          <img class="img-fluid"
+                            src="https://pix10.agoda.net/geo/city/700749/318031b4b910e0f9d7d94e9a91cf80a5.jpg?s=1920x822"
+                            alt="Sample image"> </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-lg-7 p-0">
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-1">
+                              <i class="fas fa-share fa-lg indigo-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-xl-10 col-md-11 col-10">
+                              <h5 class="font-weight-bold mb-3">Safety</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad
+                                minima veniam,
+                                quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda deleniti hic.
+                              </p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-1">
+                              <i class="fas fa-share fa-lg indigo-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-xl-10 col-md-11 col-10">
+                              <h5 class="font-weight-bold mb-3">Technology</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad
+                                minima veniam,
+                                quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda deleniti hic.
+                              </p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!--Grid row-->
+                          <div class="row">
+
+                            <!-- Grid column -->
+                            <div class="col-1">
+                              <i class="fas fa-share fa-lg indigo-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-xl-10 col-md-11 col-10">
+                              <h5 class="font-weight-bold mb-3">Finance</h5>
+                              <p class="grey-text mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad
+                                minima
+                                veniam, quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda
+                                deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!--Grid row-->
+
+                        </div>
+                        <!--Grid column-->
+
+                      </div>
+                      <!-- Grid row -->
+
+                    </div>
+                    <!--Section: Content-->
+
+
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                  <div class="container mt-5 p-0">
+
+
+                    <!--Section: Content-->
+                    <div>
+
+                      <h2 class="text-center font-weight-bold mb-4 pb-2">Donde Puedo Comer?</h2>
+                      <!-- Section description -->
+                      <p class="text-center lead grey-text mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+                      <!--Grid row-->
+                      <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-lg-8 col-md-12">
+
+                          <!--News tile -->
+                          <div class="news-tile view zoom z-depth-1 rounded mb-4">
+
+                            <a href="#!" class="text-white">
+                              <img
+                                src="https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                class="img-fluid rounded-bottom" alt="sample image">
+                              <div class="mask rgba-stylish-strong">
+                                <div class="text-white text-center py-lg-5 py-0 my-0">
+                                  <div>
+                                    <h2 class="card-title font-weight-bold pt-2">
+                                      <strong>This is news title</strong>
+                                    </h2>
+
+                                    <p class="mx-5 clearfix d-none d-md-block"></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+
+                          </div>
+                          <!--News tile -->
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-lg-4 col-md-12">
+
+                          <!--News tile -->
+                          <div class="news-tile view zoom z-depth-1 rounded mb-4">
+
+                            <a href="#!" class="text-white">
+                              <img
+                                src="https://media-cdn.tripadvisor.com/media/photo-s/0a/58/d1/73/restaurante-la-finca.jpg"
+                                class="img-fluid rounded-bottom" alt="sample image">
+                              <div class="mask rgba-stylish-strong">
+                                <div class="text-white text-center py-lg-5 py-0 my-0">
+                                  <div>
+                                    <h4 class="card-title font-weight-bold pt-2">
+                                      <strong>This is news title</strong>
+                                    </h4>
+
+                                    <p class="mx-5 clearfix d-none d-md-block"></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+
+                          </div>
+                          <!--News tile -->
+
+                          <!--News tile -->
+                          <div class="news-tile view zoom z-depth-1 rounded mb-4">
+
+                            <a href="#!" class="text-white">
+                              <img
+                                src="https://www.excelenciasgourmet.com/sites/default/files/styles/slideshow_large/public/2019-07/La%20Casina.jpg?itok=HBf9Y2g6"
+                                class="img-fluid rounded-bottom" alt="sample image">
+                              <div class="mask rgba-stylish-strong">
+                                <div class="text-white text-center py-lg-5 py-0 my-0">
+                                  <div>
+                                    <h4 class="card-title font-weight-bold pt-2">
+                                      <strong>This is news title</strong>
+                                    </h4>
+
+                                    <p class="mx-5 clearfix d-none d-md-block"></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+
+                          </div>
+                          <!--News tile -->
+
+                        </div>
+                        <!-- Grid column -->
+
+                      </div>
+                      <!--Grid row-->
+
+                    </div>
+                    <!--Section: Content-->
+
+
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                  <h2 class="text-center font-weight-bold mb-4 pb-2">Donde Puedo pasear?</h2>
+                  <!-- Section description -->
+                  <p class="text-center lead grey-text mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                  <div class="container my-5 p-0">
+
+
+                    <!--Section: Content-->
+                    <div class="dark-grey-text">
+
+                      <!-- Section heading -->
+
+
+                      <!-- Grid row -->
+                      <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-md-4">
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-flag-checkered deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">International</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit maiores
+                                nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-flask deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Experimental</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit maiores
+                                nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!-- Grid row -->
+                          <div class="row mb-md-0 mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-glass-martini deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Relaxing</h5>
+                              <p class="grey-text mb-md-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit
+                                maiores nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 text-center">
+                          <img class="img-fluid"
+                            src="https://images.pexels.com/photos/672358/pexels-photo-672358.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="Sample image">
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4">
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="far fa-2x fa-heart deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Beloved</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit maiores
+                                nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-bolt deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Rapid</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit maiores
+                                nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!-- Grid row -->
+                          <div class="row">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-magic deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Magical</h5>
+                              <p class="grey-text mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit
+                                maiores nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                        </div>
+                        <!-- Grid column -->
+
+                      </div>
+                      <!-- Grid row -->
+
+                    </div>
+                    <!--Section: Content-->
+
+
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ./Tabs -->
+    </article>
+
+
+
+
+    <article id="esteli" class="list scroll indented container-fluid p-0">
+
+      <h6 class="section-title h1 text-dark text-center mt-5">ESTELI</h6>
+
+
+      <!-- Tabs -->
+      <div id="tabs" class="mt-5 text-dark">
+        <div class="container px-0">
+          <div class="row">
+            <div class="col-xs-12 ">
+              <nav>
+                <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                  <a class="nav-item nav-link active text-dark" id="nav-1-tab" data-toggle="tab" href="#nav-1"
+                    role="tab" aria-controls="nav-home" aria-selected="true">Donde A</a>
+                  <a class="nav-item nav-link text-dark" id="nav-2-tab" data-toggle="tab" href="#nav-2"
+                    role="tab" aria-controls="nav-profile" aria-selected="false">Donde C</a>
+                  <a class="nav-item nav-link text-dark" id="nav-3-tab" data-toggle="tab" href="#nav-3"
+                    role="tab" aria-controls="nav-contact" aria-selected="false">Donde P</a>
+                </div>
+              </nav>
+              <div class="tab-content py-3 p-0 px-sm-0" id="nav-tabContent">
+                <div class="tab-pane fade show active p-0" id="nav-1" role="tabpanel" aria-labelledby="nav-1-tab">
+                  <div class="container my-5 p-0 ">
+
+
+                    <!--Section: Content-->
+                    <div class="dark-grey-text">
+
+                      <!-- Section heading -->
+                      <h2 class="text-center font-weight-bold mb-4 pb-2">Donde puedo quedarme?</h2>
+                      <!-- Section description -->
+                      <p class="text-center lead grey-text mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+                      <!-- Grid row -->
+                      <div class="row ">
+
+                        <!-- Grid column -->
+                        <div class="col-lg-5 p-0 text-center text-lg-left mb-4">
+                          <img class="img-fluid"
+                            src="https://upload.wikimedia.org/wikipedia/commons/3/34/Matagalpa_Cuidad.JPG"
+                            alt="Sample image"> </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-lg-7 p-0">
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-1">
+                              <i class="fas fa-share fa-lg indigo-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-xl-10 col-md-11 col-10">
+                              <h5 class="font-weight-bold mb-3">Safety</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad
+                                minima veniam,
+                                quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda deleniti hic.
+                              </p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-1">
+                              <i class="fas fa-share fa-lg indigo-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-xl-10 col-md-11 col-10">
+                              <h5 class="font-weight-bold mb-3">Technology</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad
+                                minima veniam,
+                                quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda deleniti hic.
+                              </p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!--Grid row-->
+                          <div class="row">
+
+                            <!-- Grid column -->
+                            <div class="col-1">
+                              <i class="fas fa-share fa-lg indigo-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-xl-10 col-md-11 col-10">
+                              <h5 class="font-weight-bold mb-3">Finance</h5>
+                              <p class="grey-text mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad
+                                minima
+                                veniam, quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda
+                                deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!--Grid row-->
+
+                        </div>
+                        <!--Grid column-->
+
+                      </div>
+                      <!-- Grid row -->
+
+                    </div>
+                    <!--Section: Content-->
+
+
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-2" role="tabpanel" aria-labelledby="nav-2-tab">
+                  <div class="container mt-5 p-0">
+
+
+                    <!--Section: Content-->
+                    <div>
+
+                      <h2 class="text-center font-weight-bold mb-4 pb-2">Donde Puedo Comer?</h2>
+                      <!-- Section description -->
+                      <p class="text-center lead grey-text mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+                      <!--Grid row-->
+                      <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-lg-8 col-md-12">
+
+                          <!--News tile -->
+                          <div class="news-tile view zoom z-depth-1 rounded mb-4">
+
+                            <a href="#!" class="text-white">
+                              <img
+                                src="https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                class="img-fluid rounded-bottom" alt="sample image">
+                              <div class="mask rgba-stylish-strong">
+                                <div class="text-white text-center py-lg-5 py-0 my-0">
+                                  <div>
+                                    <h2 class="card-title font-weight-bold pt-2">
+                                      <strong>This is news title</strong>
+                                    </h2>
+
+                                    <p class="mx-5 clearfix d-none d-md-block"></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+
+                          </div>
+                          <!--News tile -->
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-lg-4 col-md-12">
+
+                          <!--News tile -->
+                          <div class="news-tile view zoom z-depth-1 rounded mb-4">
+
+                            <a href="#!" class="text-white">
+                              <img
+                                src="https://media-cdn.tripadvisor.com/media/photo-s/0a/58/d1/73/restaurante-la-finca.jpg"
+                                class="img-fluid rounded-bottom" alt="sample image">
+                              <div class="mask rgba-stylish-strong">
+                                <div class="text-white text-center py-lg-5 py-0 my-0">
+                                  <div>
+                                    <h4 class="card-title font-weight-bold pt-2">
+                                      <strong>This is news title</strong>
+                                    </h4>
+
+                                    <p class="mx-5 clearfix d-none d-md-block"></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+
+                          </div>
+                          <!--News tile -->
+
+                          <!--News tile -->
+                          <div class="news-tile view zoom z-depth-1 rounded mb-4">
+
+                            <a href="#!" class="text-white">
+                              <img
+                                src="https://www.excelenciasgourmet.com/sites/default/files/styles/slideshow_large/public/2019-07/La%20Casina.jpg?itok=HBf9Y2g6"
+                                class="img-fluid rounded-bottom" alt="sample image">
+                              <div class="mask rgba-stylish-strong">
+                                <div class="text-white text-center py-lg-5 py-0 my-0">
+                                  <div>
+                                    <h4 class="card-title font-weight-bold pt-2">
+                                      <strong>This is news title</strong>
+                                    </h4>
+
+                                    <p class="mx-5 clearfix d-none d-md-block"></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+
+                          </div>
+                          <!--News tile -->
+
+                        </div>
+                        <!-- Grid column -->
+
+                      </div>
+                      <!--Grid row-->
+
+                    </div>
+                    <!--Section: Content-->
+
+
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-3" role="tabpanel" aria-labelledby="nav-3-tab">
+                  <h2 class="text-center font-weight-bold mb-4 pb-2">Donde Puedo pasear?</h2>
+                  <!-- Section description -->
+                  <p class="text-center lead grey-text mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                  <div class="container my-5 p-0">
+
+
+                    <!--Section: Content-->
+                    <div class="dark-grey-text">
+
+                      <!-- Section heading -->
+
+
+                      <!-- Grid row -->
+                      <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-md-4">
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-flag-checkered deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">International</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit maiores
+                                nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-flask deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Experimental</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit maiores
+                                nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!-- Grid row -->
+                          <div class="row mb-md-0 mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-glass-martini deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Relaxing</h5>
+                              <p class="grey-text mb-md-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit
+                                maiores nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 text-center">
+                          <img class="img-fluid"
+                            src="https://barricada.com.ni/wp-content/uploads/2018/07/Esteli-3.jpg"
+                            alt="Sample image">
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4">
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="far fa-2x fa-heart deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Beloved</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit maiores
+                                nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-bolt deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Rapid</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit maiores
+                                nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!-- Grid row -->
+                          <div class="row">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-magic deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Magical</h5>
+                              <p class="grey-text mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit
+                                maiores nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                        </div>
+                        <!-- Grid column -->
+
+                      </div>
+                      <!-- Grid row -->
+
+                    </div>
+                    <!--Section: Content-->
+
+
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ./Tabs -->
+    </article>
+
+
+    
+    <article id="jinotega" class="list scroll indented container-fluid p-0">
+
+      <h6 class="section-title h1 text-dark text-center mt-5">  JINOTEGA</h6>
+
+
+      <!-- Tabs -->
+      <div id="tabs" class="mt-5 text-dark">
+        <div class="container px-0">
+          <div class="row">
+            <div class="col-xs-12 ">
+              <nav>
+                <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                  <a class="nav-item nav-link active text-dark" id="nav-4-tab" data-toggle="tab" href="#nav-4"
+                    role="tab" aria-controls="nav-home" aria-selected="true">Donde A</a>
+                  <a class="nav-item nav-link text-dark" id="nav-5-tab" data-toggle="tab" href="#nav-5"
+                    role="tab" aria-controls="nav-profile" aria-selected="false">Donde C</a>
+                  <a class="nav-item nav-link text-dark" id="nav-6-tab" data-toggle="tab" href="#nav-6"
+                    role="tab" aria-controls="nav-contact" aria-selected="false">Donde P</a>
+                </div>
+              </nav>
+              <div class="tab-content py-3 p-0 px-sm-0" id="nav-tabContent">
+                <div class="tab-pane fade show active p-0" id="nav-4" role="tabpanel" aria-labelledby="nav-4-tab">
+                  <div class="container my-5 p-0 ">
+
+
+                    <!--Section: Content-->
+                    <div class="dark-grey-text">
+
+                      <!-- Section heading -->
+                      <h2 class="text-center font-weight-bold mb-4 pb-2">Donde puedo quedarme?</h2>
+                      <!-- Section description -->
+                      <p class="text-center lead grey-text mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+                      <!-- Grid row -->
+                      <div class="row ">
+
+                        <!-- Grid column -->
+                        <div class="col-lg-5 p-0 text-center text-lg-left mb-4">
+                          <img class="img-fluid"
+                            src="https://upload.wikimedia.org/wikipedia/commons/3/34/Matagalpa_Cuidad.JPG"
+                            alt="Sample image"> </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-lg-7 p-0">
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-1">
+                              <i class="fas fa-share fa-lg indigo-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-xl-10 col-md-11 col-10">
+                              <h5 class="font-weight-bold mb-3">Safety</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad
+                                minima veniam,
+                                quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda deleniti hic.
+                              </p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-1">
+                              <i class="fas fa-share fa-lg indigo-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-xl-10 col-md-11 col-10">
+                              <h5 class="font-weight-bold mb-3">Technology</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad
+                                minima veniam,
+                                quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda deleniti hic.
+                              </p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!--Grid row-->
+                          <div class="row">
+
+                            <!-- Grid column -->
+                            <div class="col-1">
+                              <i class="fas fa-share fa-lg indigo-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-xl-10 col-md-11 col-10">
+                              <h5 class="font-weight-bold mb-3">Finance</h5>
+                              <p class="grey-text mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad
+                                minima
+                                veniam, quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda
+                                deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!--Grid row-->
+
+                        </div>
+                        <!--Grid column-->
+
+                      </div>
+                      <!-- Grid row -->
+
+                    </div>
+                    <!--Section: Content-->
+
+
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-5" role="tabpanel" aria-labelledby="nav-5-tab">
+                  <div class="container mt-5 p-0">
+
+
+                    <!--Section: Content-->
+                    <div>
+
+                      <h2 class="text-center font-weight-bold mb-4 pb-2">Donde Puedo Comer?</h2>
+                      <!-- Section description -->
+                      <p class="text-center lead grey-text mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+                      <!--Grid row-->
+                      <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-lg-8 col-md-12">
+
+                          <!--News tile -->
+                          <div class="news-tile view zoom z-depth-1 rounded mb-4">
+
+                            <a href="#!" class="text-white">
+                              <img
+                                src="https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                class="img-fluid rounded-bottom" alt="sample image">
+                              <div class="mask rgba-stylish-strong">
+                                <div class="text-white text-center py-lg-5 py-0 my-0">
+                                  <div>
+                                    <h2 class="card-title font-weight-bold pt-2">
+                                      <strong>This is news title</strong>
+                                    </h2>
+
+                                    <p class="mx-5 clearfix d-none d-md-block"></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+
+                          </div>
+                          <!--News tile -->
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-lg-4 col-md-12">
+
+                          <!--News tile -->
+                          <div class="news-tile view zoom z-depth-1 rounded mb-4">
+
+                            <a href="#!" class="text-white">
+                              <img
+                                src="https://media-cdn.tripadvisor.com/media/photo-s/0a/58/d1/73/restaurante-la-finca.jpg"
+                                class="img-fluid rounded-bottom" alt="sample image">
+                              <div class="mask rgba-stylish-strong">
+                                <div class="text-white text-center py-lg-5 py-0 my-0">
+                                  <div>
+                                    <h4 class="card-title font-weight-bold pt-2">
+                                      <strong>This is news title</strong>
+                                    </h4>
+
+                                    <p class="mx-5 clearfix d-none d-md-block"></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+
+                          </div>
+                          <!--News tile -->
+
+                          <!--News tile -->
+                          <div class="news-tile view zoom z-depth-1 rounded mb-4">
+
+                            <a href="#!" class="text-white">
+                              <img
+                                src="https://www.excelenciasgourmet.com/sites/default/files/styles/slideshow_large/public/2019-07/La%20Casina.jpg?itok=HBf9Y2g6"
+                                class="img-fluid rounded-bottom" alt="sample image">
+                              <div class="mask rgba-stylish-strong">
+                                <div class="text-white text-center py-lg-5 py-0 my-0">
+                                  <div>
+                                    <h4 class="card-title font-weight-bold pt-2">
+                                      <strong>This is news title</strong>
+                                    </h4>
+
+                                    <p class="mx-5 clearfix d-none d-md-block"></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+
+                          </div>
+                          <!--News tile -->
+
+                        </div>
+                        <!-- Grid column -->
+
+                      </div>
+                      <!--Grid row-->
+
+                    </div>
+                    <!--Section: Content-->
+
+
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-6" role="tabpanel" aria-labelledby="nav-6-tab">
+                  <h2 class="text-center font-weight-bold mb-4 pb-2">Donde Puedo pasear?</h2>
+                  <!-- Section description -->
+                  <p class="text-center lead grey-text mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                  <div class="container my-5 p-0">
+
+
+                    <!--Section: Content-->
+                    <div class="dark-grey-text">
+
+                      <!-- Section heading -->
+
+
+                      <!-- Grid row -->
+                      <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-md-4">
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-flag-checkered deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">International</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit maiores
+                                nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-flask deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Experimental</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit maiores
+                                nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!-- Grid row -->
+                          <div class="row mb-md-0 mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-glass-martini deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Relaxing</h5>
+                              <p class="grey-text mb-md-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit
+                                maiores nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 text-center">
+                          <img class="img-fluid"
+                            src="https://images.pexels.com/photos/672358/pexels-photo-672358.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="Sample image">
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4">
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="far fa-2x fa-heart deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Beloved</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit maiores
+                                nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-bolt deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Rapid</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit maiores
+                                nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!-- Grid row -->
+                          <div class="row">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-magic deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Magical</h5>
+                              <p class="grey-text mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit
+                                maiores nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                        </div>
+                        <!-- Grid column -->
+
+                      </div>
+                      <!-- Grid row -->
+
+                    </div>
+                    <!--Section: Content-->
+
+
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ./Tabs -->
+    </article>
+
+
+
+
+    <article id="madriz" class="list scroll indented container-fluid p-0">
+
+      <h6 class="section-title h1 text-dark text-center mt-5">MADRIZ</h6>
+
+
+      <!-- Tabs -->
+      <div id="tabs" class="mt-5 text-dark">
+        <div class="container px-0">
+          <div class="row">
+            <div class="col-xs-12 ">
+              <nav>
+                <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                  <a class="nav-item nav-link active text-dark" id="nav-7-tab" data-toggle="tab" href="#nav-7"
+                    role="tab" aria-controls="nav-home" aria-selected="true">Donde A</a>
+                  <a class="nav-item nav-link text-dark" id="nav-8-tab" data-toggle="tab" href="#nav-8"
+                    role="tab" aria-controls="nav-profile" aria-selected="false">Donde C</a>
+                  <a class="nav-item nav-link text-dark" id="nav-9-tab" data-toggle="tab" href="#nav-9"
+                    role="tab" aria-controls="nav-contact" aria-selected="false">Donde P</a>
+                </div>
+              </nav>
+              <div class="tab-content py-3 p-0 px-sm-0" id="nav-tabContent">
+                <div class="tab-pane fade show active p-0" id="nav-7" role="tabpanel" aria-labelledby="nav-7-tab">
+                  <div class="container my-5 p-0 ">
+
+
+                    <!--Section: Content-->
+                    <div class="dark-grey-text">
+
+                      <!-- Section heading -->
+                      <h2 class="text-center font-weight-bold mb-4 pb-2">Donde puedo quedarme?</h2>
+                      <!-- Section description -->
+                      <p class="text-center lead grey-text mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+                      <!-- Grid row -->
+                      <div class="row ">
+
+                        <!-- Grid column -->
+                        <div class="col-lg-5 p-0 text-center text-lg-left mb-4">
+                          <img class="img-fluid"
+                            src="https://upload.wikimedia.org/wikipedia/commons/3/34/Matagalpa_Cuidad.JPG"
+                            alt="Sample image"> </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-lg-7 p-0">
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-1">
+                              <i class="fas fa-share fa-lg indigo-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-xl-10 col-md-11 col-10">
+                              <h5 class="font-weight-bold mb-3">Safety</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad
+                                minima veniam,
+                                quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda deleniti hic.
+                              </p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-1">
+                              <i class="fas fa-share fa-lg indigo-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-xl-10 col-md-11 col-10">
+                              <h5 class="font-weight-bold mb-3">Technology</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad
+                                minima veniam,
+                                quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda deleniti hic.
+                              </p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!--Grid row-->
+                          <div class="row">
+
+                            <!-- Grid column -->
+                            <div class="col-1">
+                              <i class="fas fa-share fa-lg indigo-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-xl-10 col-md-11 col-10">
+                              <h5 class="font-weight-bold mb-3">Finance</h5>
+                              <p class="grey-text mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad
+                                minima
+                                veniam, quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda
+                                deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!--Grid row-->
+
+                        </div>
+                        <!--Grid column-->
+
+                      </div>
+                      <!-- Grid row -->
+
+                    </div>
+                    <!--Section: Content-->
+
+
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-8" role="tabpanel" aria-labelledby="nav-8-tab">
+                  <div class="container mt-5 p-0">
+
+
+                    <!--Section: Content-->
+                    <div>
+
+                      <h2 class="text-center font-weight-bold mb-4 pb-2">Donde Puedo Comer?</h2>
+                      <!-- Section description -->
+                      <p class="text-center lead grey-text mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+                      <!--Grid row-->
+                      <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-lg-8 col-md-12">
+
+                          <!--News tile -->
+                          <div class="news-tile view zoom z-depth-1 rounded mb-4">
+
+                            <a href="#!" class="text-white">
+                              <img
+                                src="https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                class="img-fluid rounded-bottom" alt="sample image">
+                              <div class="mask rgba-stylish-strong">
+                                <div class="text-white text-center py-lg-5 py-0 my-0">
+                                  <div>
+                                    <h2 class="card-title font-weight-bold pt-2">
+                                      <strong>This is news title</strong>
+                                    </h2>
+
+                                    <p class="mx-5 clearfix d-none d-md-block"></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+
+                          </div>
+                          <!--News tile -->
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-lg-4 col-md-12">
+
+                          <!--News tile -->
+                          <div class="news-tile view zoom z-depth-1 rounded mb-4">
+
+                            <a href="#!" class="text-white">
+                              <img
+                                src="https://media-cdn.tripadvisor.com/media/photo-s/0a/58/d1/73/restaurante-la-finca.jpg"
+                                class="img-fluid rounded-bottom" alt="sample image">
+                              <div class="mask rgba-stylish-strong">
+                                <div class="text-white text-center py-lg-5 py-0 my-0">
+                                  <div>
+                                    <h4 class="card-title font-weight-bold pt-2">
+                                      <strong>This is news title</strong>
+                                    </h4>
+
+                                    <p class="mx-5 clearfix d-none d-md-block"></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+
+                          </div>
+                          <!--News tile -->
+
+                          <!--News tile -->
+                          <div class="news-tile view zoom z-depth-1 rounded mb-4">
+
+                            <a href="#!" class="text-white">
+                              <img
+                                src="https://www.excelenciasgourmet.com/sites/default/files/styles/slideshow_large/public/2019-07/La%20Casina.jpg?itok=HBf9Y2g6"
+                                class="img-fluid rounded-bottom" alt="sample image">
+                              <div class="mask rgba-stylish-strong">
+                                <div class="text-white text-center py-lg-5 py-0 my-0">
+                                  <div>
+                                    <h4 class="card-title font-weight-bold pt-2">
+                                      <strong>This is news title</strong>
+                                    </h4>
+
+                                    <p class="mx-5 clearfix d-none d-md-block"></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+
+                          </div>
+                          <!--News tile -->
+
+                        </div>
+                        <!-- Grid column -->
+
+                      </div>
+                      <!--Grid row-->
+
+                    </div>
+                    <!--Section: Content-->
+
+
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-9" role="tabpanel" aria-labelledby="nav-9-tab">
+                  <h2 class="text-center font-weight-bold mb-4 pb-2">Donde Puedo pasear?</h2>
+                  <!-- Section description -->
+                  <p class="text-center lead grey-text mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                  <div class="container my-5 p-0">
+
+
+                    <!--Section: Content-->
+                    <div class="dark-grey-text">
+
+                      <!-- Section heading -->
+
+
+                      <!-- Grid row -->
+                      <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-md-4">
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-flag-checkered deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">International</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit maiores
+                                nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-flask deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Experimental</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit maiores
+                                nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!-- Grid row -->
+                          <div class="row mb-md-0 mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-glass-martini deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Relaxing</h5>
+                              <p class="grey-text mb-md-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit
+                                maiores nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 text-center">
+                          <img class="img-fluid"
+                            src="https://images.pexels.com/photos/672358/pexels-photo-672358.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="Sample image">
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4">
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="far fa-2x fa-heart deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Beloved</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit maiores
+                                nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-bolt deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Rapid</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit maiores
+                                nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!-- Grid row -->
+                          <div class="row">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-magic deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Magical</h5>
+                              <p class="grey-text mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit
+                                maiores nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                        </div>
+                        <!-- Grid column -->
+
+                      </div>
+                      <!-- Grid row -->
+
+                    </div>
+                    <!--Section: Content-->
+
+
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ./Tabs -->
+    </article>
+
+
+
+
+    <article id="nuevaS" class="list scroll indented container-fluid p-0">
+
+      <h6 class="section-title h1 text-dark text-center mt-5">NUEVA SEGOVIA</h6>
+
+
+      <!-- Tabs -->
+      <div id="tabs" class="mt-5 text-dark">
+        <div class="container px-0">
+          <div class="row">
+            <div class="col-xs-12 ">
+              <nav>
+                <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                  <a class="nav-item nav-link active text-dark" id="nav-10-tab" data-toggle="tab" href="#nav-10"
+                    role="tab" aria-controls="nav-home" aria-selected="true">Donde A</a>
+                  <a class="nav-item nav-link text-dark" id="nav-11-tab" data-toggle="tab" href="#nav-11"
+                    role="tab" aria-controls="nav-profile" aria-selected="false">Donde C</a>
+                  <a class="nav-item nav-link text-dark" id="nav-12-tab" data-toggle="tab" href="#nav-12"
+                    role="tab" aria-controls="nav-contact" aria-selected="false">Donde P</a>
+                </div>
+              </nav>
+              <div class="tab-content py-3 p-0 px-sm-0" id="nav-tabContent">
+                <div class="tab-pane fade show active p-0" id="nav-10" role="tabpanel" aria-labelledby="nav-10-tab">
+                  <div class="container my-5 p-0 ">
+
+
+                    <!--Section: Content-->
+                    <div class="dark-grey-text">
+
+                      <!-- Section heading -->
+                      <h2 class="text-center font-weight-bold mb-4 pb-2">Donde puedo quedarme?</h2>
+                      <!-- Section description -->
+                      <p class="text-center lead grey-text mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+                      <!-- Grid row -->
+                      <div class="row ">
+
+                        <!-- Grid column -->
+                        <div class="col-lg-5 p-0 text-center text-lg-left mb-4">
+                          <img class="img-fluid"
+                            src="https://upload.wikimedia.org/wikipedia/commons/3/34/Matagalpa_Cuidad.JPG"
+                            alt="Sample image"> </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-lg-7 p-0">
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-1">
+                              <i class="fas fa-share fa-lg indigo-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-xl-10 col-md-11 col-10">
+                              <h5 class="font-weight-bold mb-3">Safety</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad
+                                minima veniam,
+                                quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda deleniti hic.
+                              </p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-1">
+                              <i class="fas fa-share fa-lg indigo-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-xl-10 col-md-11 col-10">
+                              <h5 class="font-weight-bold mb-3">Technology</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad
+                                minima veniam,
+                                quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda deleniti hic.
+                              </p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!--Grid row-->
+                          <div class="row">
+
+                            <!-- Grid column -->
+                            <div class="col-1">
+                              <i class="fas fa-share fa-lg indigo-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-xl-10 col-md-11 col-10">
+                              <h5 class="font-weight-bold mb-3">Finance</h5>
+                              <p class="grey-text mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad
+                                minima
+                                veniam, quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda
+                                deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!--Grid row-->
+
+                        </div>
+                        <!--Grid column-->
+
+                      </div>
+                      <!-- Grid row -->
+
+                    </div>
+                    <!--Section: Content-->
+
+
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-11" role="tabpanel" aria-labelledby="nav-11-tab">
+                  <div class="container mt-5 p-0">
+
+
+                    <!--Section: Content-->
+                    <div>
+
+                      <h2 class="text-center font-weight-bold mb-4 pb-2">Donde Puedo Comer?</h2>
+                      <!-- Section description -->
+                      <p class="text-center lead grey-text mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+                      <!--Grid row-->
+                      <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-lg-8 col-md-12">
+
+                          <!--News tile -->
+                          <div class="news-tile view zoom z-depth-1 rounded mb-4">
+
+                            <a href="#!" class="text-white">
+                              <img
+                                src="https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                class="img-fluid rounded-bottom" alt="sample image">
+                              <div class="mask rgba-stylish-strong">
+                                <div class="text-white text-center py-lg-5 py-0 my-0">
+                                  <div>
+                                    <h2 class="card-title font-weight-bold pt-2">
+                                      <strong>This is news title</strong>
+                                    </h2>
+
+                                    <p class="mx-5 clearfix d-none d-md-block"></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+
+                          </div>
+                          <!--News tile -->
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-lg-4 col-md-12">
+
+                          <!--News tile -->
+                          <div class="news-tile view zoom z-depth-1 rounded mb-4">
+
+                            <a href="#!" class="text-white">
+                              <img
+                                src="https://media-cdn.tripadvisor.com/media/photo-s/0a/58/d1/73/restaurante-la-finca.jpg"
+                                class="img-fluid rounded-bottom" alt="sample image">
+                              <div class="mask rgba-stylish-strong">
+                                <div class="text-white text-center py-lg-5 py-0 my-0">
+                                  <div>
+                                    <h4 class="card-title font-weight-bold pt-2">
+                                      <strong>This is news title</strong>
+                                    </h4>
+
+                                    <p class="mx-5 clearfix d-none d-md-block"></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+
+                          </div>
+                          <!--News tile -->
+
+                          <!--News tile -->
+                          <div class="news-tile view zoom z-depth-1 rounded mb-4">
+
+                            <a href="#!" class="text-white">
+                              <img
+                                src="https://www.excelenciasgourmet.com/sites/default/files/styles/slideshow_large/public/2019-07/La%20Casina.jpg?itok=HBf9Y2g6"
+                                class="img-fluid rounded-bottom" alt="sample image">
+                              <div class="mask rgba-stylish-strong">
+                                <div class="text-white text-center py-lg-5 py-0 my-0">
+                                  <div>
+                                    <h4 class="card-title font-weight-bold pt-2">
+                                      <strong>This is news title</strong>
+                                    </h4>
+
+                                    <p class="mx-5 clearfix d-none d-md-block"></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+
+                          </div>
+                          <!--News tile -->
+
+                        </div>
+                        <!-- Grid column -->
+
+                      </div>
+                      <!--Grid row-->
+
+                    </div>
+                    <!--Section: Content-->
+
+
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-112" role="tabpanel" aria-labelledby="nav-12-tab">
+                  <h2 class="text-center font-weight-bold mb-4 pb-2">Donde Puedo pasear?</h2>
+                  <!-- Section description -->
+                  <p class="text-center lead grey-text mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                  <div class="container my-5 p-0">
+
+
+                    <!--Section: Content-->
+                    <div class="dark-grey-text">
+
+                      <!-- Section heading -->
+
+
+                      <!-- Grid row -->
+                      <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-md-4">
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-flag-checkered deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">International</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit maiores
+                                nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-flask deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Experimental</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit maiores
+                                nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!-- Grid row -->
+                          <div class="row mb-md-0 mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-glass-martini deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Relaxing</h5>
+                              <p class="grey-text mb-md-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit
+                                maiores nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 text-center">
+                          <img class="img-fluid"
+                            src="https://images.pexels.com/photos/672358/pexels-photo-672358.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="Sample image">
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4">
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="far fa-2x fa-heart deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Beloved</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit maiores
+                                nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-bolt deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Rapid</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit maiores
+                                nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!-- Grid row -->
+                          <div class="row">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-magic deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Magical</h5>
+                              <p class="grey-text mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit
+                                maiores nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                        </div>
+                        <!-- Grid column -->
+
+                      </div>
+                      <!-- Grid row -->
+
+                    </div>
+                    <!--Section: Content-->
+
+
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ./Tabs -->
+    </article>
+
+
+
+
+
+ 
+  </section>
+
+
+
+
+
+
+
+
+
+  <aside id="menu-aside">
+    <header>Menu</header>
+    <article class="list scroll active">
+      <ul>
+        <li class="active" data-icon="html5-2 brand">
+          <a href="#home" data-router="article">
+           <strong id="home">Home</strong>
+           <small>Puedes regresar al home desde aquí</small>
+          </a>
+        </li>
+        <li data-icon="html5-2 brand">
+          <a href="#matagalpa" data-router="article">
+            <strong id="matagalpa">Matagalpa</strong>
+            <small>Elegi otra sección</small>
+           </a>
+        </li>
+        <li data-icon="html5-2 brand">
+          <a href="#esteli" data-router="article">
+            <strong id="esteli">Esteli</strong>
+            <small>Elegi otra sección</small>
+           </a>
+        </li>
+        <li data-icon="html5-2 brand">
+          <a href="#jinotega" data-router="article">
+            <strong id="jinotega">Jinotega</strong>
+            <small>Elegi otra sección</small>
+           </a>
+        </li>
+        <li data-icon="html5-2 brand">
+          <a href="#madriz" data-router="article">
+            <strong id="madriz">Madriz</strong>
+            <small>Elegi otra sección</small>
+           </a>
+        </li>
+        <li data-icon="html5-2 brand">
+          <a href="#nuevaS" data-router="article">
+            <strong id="nuevaS">Nueva Segovia</strong>
+            <small>Elegi otra sección</small>
+           </a>
+        </li>
+      </ul>
+    </article>
+  </aside>
+
+
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Lungo - Dependencies -->
+  <script src="components/quojs/quo.js"></script>
+  <script src="components/lungo/lungo.js"></script>
+
+  <!-- Lungo - Sandbox App -->
+  <script>
+    Lungo.init({
+      name: 'reaumentada'
+    });
+  </script>
+</body>
+
+</html>
